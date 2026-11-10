@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import './App.css';
 import { add } from './utils/math';
+import _ from 'lodash'
 
 function App() {
   const [count, setCount] = useState(0);
 
   const handleIncrement = () => {
-    // Gọi hàm add được import từ utils/math.js
     setCount(prev => add(prev, 1));
   };
 
